@@ -10,19 +10,7 @@
       "type": "java.lang.Boolean"
     },
     {
-      "name": "route.services.auth.url",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "route.services.employee.url",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "route.services.patient.url",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "route.services.pharmacy.url",
+      "name": "route.services.auth-identity.url",
       "type": "java.lang.String"
     }
   ]
