@@ -18,7 +18,7 @@ logging:
 
 spring:
   application:
-    name: Gateway
+    name: gateway-service
 
   jackson:
     time-zone: "America/Guatemala"
@@ -32,7 +32,7 @@ security:
 route:
   services:
     auth-identity:
-      url: ${AUTH_IDENTITY_URL:http://auth-identity:8081/}
+      url: ${AUTH_IDENTITY_URL:http://localhost:8081/}
 
 
 springdoc:

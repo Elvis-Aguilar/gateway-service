@@ -17,7 +17,7 @@ public class AuthenticationIdentityRoutes {
     @Bean
     RouterFunction<ServerResponse> routeAuthenticationService(AuthIdentityServiceProperty servicesProperty) {
         return route()
-                .route(path("/auth-entity/**"), http(servicesProperty.url()))
+                .route(path("/auth-identity/**"), http(servicesProperty.url()))
                 .build();
     }
 }
