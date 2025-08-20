@@ -12,6 +12,30 @@
     {
       "name": "route.services.auth-identity.url",
       "type": "java.lang.String"
+    },
+    {
+      "name": "route.services.restaurant.url",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "route.services.hotel.url",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "route.services.reservation.url",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "route.services.promociones.url",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "route.services.reviews.url",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "route.services.finance.url",
+      "type": "java.lang.String"
     }
   ]
 }

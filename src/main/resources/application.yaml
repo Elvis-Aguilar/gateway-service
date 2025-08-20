@@ -33,6 +33,18 @@ route:
   services:
     auth-identity:
       url: ${AUTH_IDENTITY_URL:http://localhost:8081/}
+    hotel:
+      url: ${HOTEL_URL:http://localhost:8082/}
+    reservation:
+        url: ${RESERVATION_URL:http://localhost:8083/}
+    restaurant:
+      url: ${AUTH_IDENTITY_URL:http://localhost:8084/}
+    promotion:
+        url: ${PROMOTION_URL:http://localhost:8085/}
+    reviews:
+      url: ${REVIEWS_URL:http://localhost:8086/}
+    finance:
+      url: ${FINANCE_URL:http://localhost:8087/}
 
 
 springdoc:
@@ -44,3 +56,20 @@ springdoc:
       - url: /auth-identity/v3/api-docs
         name: Auth Service
 
+      - url: /hotel/v3/api-docs
+        name: hotel Service
+
+      - url: /reservation/v3/api-docs
+        name: reservation Service
+
+      - url: /restaurant/v3/api-docs
+        name: restaurant Service
+
+      - url: /promotion/v3/api-docs
+        name: promotion Service
+
+      - url: /reviews/v3/api-docs
+        name: reviews Service
+
+      - url: /finance/v3/api-docs
+        name: finance Service
