@@ -6,6 +6,7 @@ import static org.springframework.http.HttpMethod.PUT;
 import static org.springframework.security.config.http.SessionCreationPolicy.STATELESS;
 
 import java.util.List;
+import java.util.UUID;
 
 import com.eat.sleep.gateway.config.property.RsaProperty;
 import org.springframework.context.annotation.Bean;
@@ -65,7 +66,7 @@ public class AuthConfig {
     }
 
     private AbstractAuthenticationToken convertJwtToAuthentication(Jwt jwt) {
-        long id = Long.parseLong(jwt.getSubject());
+        UUID id = UUID.fromString(jwt.getSubject());
         List<SimpleGrantedAuthority> authorities = jwt.getClaimAsStringList("auths")
                 .stream()
                 .map(SimpleGrantedAuthority::new)
