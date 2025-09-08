@@ -1,6 +1,7 @@
 package com.eat.sleep.gateway.routes;
 
 import com.eat.sleep.gateway.config.property.FinanceServiceProperty;
+import com.eat.sleep.gateway.config.property.PromotionServiceProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.function.RouterFunction;
@@ -14,9 +15,9 @@ import static org.springframework.cloud.gateway.server.mvc.predicate.GatewayRequ
 public class PromotionRoutes {
 
     @Bean
-    RouterFunction<ServerResponse> routePromotionService(FinanceServiceProperty servicesProperty) {
+    RouterFunction<ServerResponse> routePromotionService(PromotionServiceProperty promotionServiceProperty) {
         return route()
-                .route(path("/promotion/**"), http(servicesProperty.url()))
+                .route(path("/promotion/**"), http(promotionServiceProperty.url()))
                 .build();
     }
 

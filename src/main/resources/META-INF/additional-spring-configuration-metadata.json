@@ -22,11 +22,7 @@
       "type": "java.lang.String"
     },
     {
-      "name": "route.services.reservation.url",
-      "type": "java.lang.String"
-    },
-    {
-      "name": "route.services.promociones.url",
+      "name": "route.services.promotion.url",
       "type": "java.lang.String"
     },
     {
